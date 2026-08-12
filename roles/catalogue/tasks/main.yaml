@@ -1,1 +1,4 @@
-
+- name: nodejs setup
+  ansible.builtin.import_role:
+    name: common
+    tasks: app_setup.yaml
