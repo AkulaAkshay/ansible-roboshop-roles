@@ -21,18 +21,18 @@
     path: /app
 
 # above we deleted the /app directory and now we will delete catalogue.zip file if present
-- name: delete catalogue.zip file
+- name: delete {{ component }}.zip file
   ansible.builtin.file:
     state: absent
-    path: /tmp/catalogue.zip
+    path: /tmp/{{ component }}.zip
     
-- name: download DEV written code - catalogue application
+- name: download DEV written code - {{ component }} application
   ansible.builtin.get_url:
-    url: https://roboshop-artifacts.s3.amazonaws.com/catalogue-v3.zip
-    dest: /tmp/catalogue.zip 
+    url: https://roboshop-artifacts.s3.amazonaws.com/{{ component }}-v3.zip
+    dest: /tmp/{{ component }}.zip 
 
 - name: extract catalogue application - unzipping
   ansible.builtin.unarchive:
-    src: /tmp/catalogue.zip
+    src: /tmp/{{ component }}.zip
     dest: /app 
     remote_src: yes
