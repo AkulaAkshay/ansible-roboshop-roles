@@ -4,6 +4,7 @@
 #     dest: "/etc/systemd/system/{{ component }}.service"
 
 # systemd (daemon reload) should run only when we have a change in .service file (in "/etc/systemd/system/{{ component }}.service" )
+# - name: daemon reload 
 #   ansible.builtin.systemd_service:
 #     daemon_reload: true
 
