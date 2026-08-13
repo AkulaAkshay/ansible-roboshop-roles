@@ -1,1 +1,2 @@
 MONGODB_HOST: mongodb.akshaysunny.space
+#var also called as defaults i.e., MONGODB_HOST=mongodb.akshaysunny.space

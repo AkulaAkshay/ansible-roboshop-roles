@@ -32,3 +32,5 @@
     tasks_from: system_setup.yaml
   tags:
   - deployment
+
+#var also called as defaults i.e., MONGODB_HOST=mongodb.akshaysunny.space
