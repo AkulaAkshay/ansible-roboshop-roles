@@ -1,4 +1,5 @@
-# if we want to define variables which are used by all the roles, we can define in this directory (wich is not inside the roles folder scope, i.e., outside of the roles folder scope)
+# if we want to define variables which are used by all the roles, we can define in this directory (wich 
+#is not inside the roles folder scope, i.e., outside of the roles folder scope)
 
 MONGODB_HOST: mongodb.akshaysunny.space
 REDIS_HOST: redis.akshaysunny.space
