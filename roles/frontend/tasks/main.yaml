@@ -22,7 +22,7 @@
 
 - name: download frontend application
   ansible.builtin.get_url:
-    url: https://roboshop-artifacts.s3.amazonaws.com/{{ component }}
+    url: https://roboshop-artifacts.s3.amazonaws.com/{{ component }}-v3.zip
     dest: /tmp/{{ component }}.zip
 
 - name: extract frontend application
