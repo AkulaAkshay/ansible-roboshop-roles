@@ -2,14 +2,16 @@
   ansible.builtin.import_role:
     name: common
     tasks_from: app_setup.yaml
-  tags: 
-  - test_deployment
+  tags:
+  - deployment
 # if we want to run only a specific a specific block of a playbook (Ansible tags are text metadata labels assigned to tasks, plays, blocks, or roles that allow you to selectively run or skip specific parts of a playbook at runtime.)
 
 - name: app setup
   ansible.builtin.import_role:
     name: common
     tasks_from: nodejs_setup.yaml
+  tags:
+  - deploy
 
 - name: copy mongo repo
   ansible.builtin.copy:
