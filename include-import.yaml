@@ -17,7 +17,7 @@
 #   tags: # if we give tags here that means whole app_setup.yaml code will respect this deployment tags
 #   - deployment
 
-- name: nodejs setup
+- name: app setup
   ansible.builtin.include_role:
     name: common
     tasks_from: app_setup.yaml
