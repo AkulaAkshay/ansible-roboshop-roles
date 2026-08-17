@@ -2,6 +2,10 @@
   ansible.builtin.debug:
     msg: "Hi"
 
+# - name: testing include vs import again
+# ansible.builtin.debug:
+#       msg: "Hello"
+
 - name: testing include vs import again
-ansible.builtin.debug:
+  ansible.builtin.debug:
       msg: "Hello"
