@@ -12,7 +12,7 @@
     name: common
     tasks_from: nodejs_setup.yaml
   tags:
-  - deploy
+  - deployment
 
 - name: copy mongo repo
   ansible.builtin.copy:
