@@ -10,7 +10,7 @@
   #ansible.builtin.import_role:
   ansible.builtin.include_role:
     name: common
-    tasks_from: nodejs_setup.yaml
+    tasks_from: nodejs_setup.yaml #include will not respect tags --> even if we provides tags it treats like no tags ever existed ( -t deployment --> if we run this, then this will be skipped, will not be executed)
   tags:
   - deployment
 
